@@ -52,5 +52,8 @@
 * 在本地设置远程仓库别名及地址 git remote add origin https://github.com/shipenghe/-_-.git
 * 将本地主分支推送到远程主分支 git push origin master
 * 创建并切换到个人分支(dev_个人昵称) git checkout -b dev_huaming
-* 暂存并提交个人分支到仓库 git add .   git commit -m "个人分支初始化"
+* 暂存个人分支 git add .
+* 提交个人分支 git commit -m "个人分支初始化"
 * 将本地个人分支推送到远程个人分支 git push origin dev_huaming
+* 切换到主分支 git checkout master
+* 合并个人分支到主分支 git merge dev_huaming
