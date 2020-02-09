@@ -44,16 +44,22 @@
 * 使用代理解决("proxy": "http://localhost:5000")
 
 ## 本项目中的git使用
+### 初始化git及远程仓库
 * 项目初始化时已经有了git忽略文件gitignore,可以进行git的忽略配置
 * 初始化本地git仓库 git init(根目录下)
 * 将工作区代码提交到缓存区 git add .
 * 将缓存区代码提交到版本库 git commit -m "项目git初始化"
 * 在github创建相应仓库
 * 在本地设置远程仓库别名及地址 git remote add origin https://github.com/shipenghe/-_-.git
+### 主分支推送
 * 将本地主分支推送到远程主分支 git push origin master
+### 个人分支创建
 * 创建并切换到个人分支(dev_个人昵称) git checkout -b dev_huaming
 * 暂存个人分支 git add .
 * 提交个人分支 git commit -m "个人分支初始化"
 * 将本地个人分支推送到远程个人分支 git push origin dev_huaming
+### 合并到主分支
 * 切换到主分支 git checkout master
 * 合并个人分支到主分支 git merge dev_huaming
+### 个人分支拉取主分支
+* git pull origin master
