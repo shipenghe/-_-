@@ -25,7 +25,11 @@
 * cnpm i antd --save 引入antdUI框架(按需引入、主题等参考官网配置)
 * cnpm i react-router-dom --save 引入react-router进行路由
 * cnpm i axios --save 引入axois发送ajax请求
+
+## 插件相关
 * cnpm i store --save 引入store用于进行浏览器存储
+* 使用minireset.css对样式进行重置
+
 
 ## 登录模块
 * 用户名密码表单验证：
