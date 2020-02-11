@@ -1,11 +1,11 @@
-@base-color: yellow;
+@import '../../App.less';
 
 .left-sider {
 
   .system-title {
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background-color: @bg-base;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,8 +18,7 @@
     .h2 {
       font-size: 26px;
       font-weight: bold;
-      // color: #0168AB;
-      color: @base-color;
+      color: @logo-color;
       margin-bottom: 0.2em;
     }
   }

@@ -19,7 +19,7 @@ export default class Admin extends Component {
     }
     return (
       <Layout style={{ height: '100%' }}>
-        <Sider>
+        <Sider style={{ backgroundColor: 'rgba(240,240,240,1)'}}>
           <LeftSider></LeftSider>
         </Sider>
         <Layout>

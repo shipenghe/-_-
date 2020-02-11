@@ -11,12 +11,13 @@ class index extends Component {
 
   state = {
     // 打开的submenu,第一个元素为一级菜单的sub,第二个元素为二级菜单的sub
-    openKeys: ['_seat'],
+    openKeys: [],
   }
 
   openSub = []
 
   onOpenChange = openKeys => {
+    console.log(openKeys)
     let openSub = this.state.openKeys
     // 获取新点击的submenu的key
     const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1)
@@ -27,9 +28,13 @@ class index extends Component {
       })
     } else { // 点击了新的submenu
       // 判断是一级菜单还是二级菜单
-      if (latestOpenKey.startsWith('_')) {
-        // 一级菜单
-        openSub[0] = latestOpenKey
+      if (latestOpenKey.startsWith('_')) { // 一级菜单
+        if(openSub[0] && openSub[0].startsWith('_')) { //覆盖原来的一级菜单
+          openSub[0] = latestOpenKey
+        } else { // 放入此一级菜单
+          openSub.unshift(latestOpenKey)
+        }
+        
       } else { // 二级菜单
         openSub[1] = latestOpenKey
       }
@@ -74,14 +79,21 @@ class index extends Component {
 
   getMenuList2 = (menu) => {
     const selectKey = this.props.location.pathname
+    function findOpenSub(list) {
+
+    }
     return menu.reduce((pre, item) => {
       if (item.children) {
-        const isSelect = item.children.find(item => item.key === selectKey)
-        if (isSelect) {
-          this.setState({
-            openKeys: item.key ? [item.key] : [],
-          })
-        }
+        item.children.forEach(item2 => {
+          if(item2.children) {
+            const isSelect = item2.children.find(item3 => item3.key === selectKey)
+            if (isSelect) {
+              this.setState({
+                openKeys: [item.key, item2.key],
+              })
+            }
+          }
+        })
         pre.push(
           <SubMenu
             key={item.key}
