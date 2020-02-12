@@ -17,7 +17,6 @@ class index extends Component {
   openSub = []
 
   onOpenChange = openKeys => {
-    console.log(openKeys)
     let openSub = this.state.openKeys
     // 获取新点击的submenu的key
     const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1)

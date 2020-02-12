@@ -95,46 +95,65 @@ const menuList = [
     icon: 'pie-chart',
     children: [
       {
-        title: '楼层一',
-        key: '/1',
-        icon: 'pie-chart',
-        children: [
-          {
-            title: '理科阅览室',
-            key: '/2',
-            icon: 'pie-chart'
-          },
-          {
-            title: '工科阅览室',
-            key: '/3',
-            icon: 'pie-chart'
-          },
-          {
-            title: '零点书房',
-            key: '/4',
-            icon: 'pie-chart'
-          }
-        ]
+        title: '已预约',
+        key: '/done',
+        icon: 'pie-chart'
       },
       {
-        title: '楼层二',
-        key: '/floor8',
-        icon: 'pie-chart',
-        children: [
-          {
-            title: '综合阅览室(二)',
-            key: '/compre22',
-            icon: 'pie-chart'
-          },
-          {
-            title: '报刊阅览室',
-            key: '/press2',
-            icon: 'pie-chart'
-          }
-        ]
+        title: '预约历史',
+        key: '/history',
+        icon: 'pie-chart'
+      },
+      {
+        title: '违约记录',
+        key: '/record',
+        icon: 'pie-chart'
       }
     ]
-  }
-
+  },
+  {
+    title: '预约情况',
+    key: '_state',
+    icon: 'pie-chart'
+  },
+  {
+    title: '角色管理',
+    key: '_role',
+    icon: 'pie-chart'
+  },
+  {
+    title: '展览管理',
+    key: '_mngdisplay',
+    icon: 'pie-chart',
+    children: [
+      {
+        title: '封面展览',
+        key: '/cover',
+        icon: 'pie-chart'
+      },
+      {
+        title: '科室展览',
+        key: '/room',
+        icon: 'pie-chart'
+      }
+    ]
+  },
+  {
+    title: '消息管理',
+    key: '_message',
+    icon: 'pie-chart',
+    children: [
+      {
+        title: '欢迎消息',
+        key: '/welcome',
+        icon: 'pie-chart'
+      },
+      {
+        title: '名言消息',
+        key: '/saying',
+        icon: 'pie-chart'
+      }
+    ]
+  },
 ]
 export default menuList
