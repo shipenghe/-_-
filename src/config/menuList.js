@@ -118,7 +118,12 @@ const menuList = [
   },
   {
     title: '角色管理',
-    key: '_role',
+    key: '/role',
+    icon: 'pie-chart'
+  },
+  {
+    title: '用户管理',
+    key: '/user',
     icon: 'pie-chart'
   },
   {
@@ -127,33 +132,38 @@ const menuList = [
     icon: 'pie-chart',
     children: [
       {
-        title: '封面展览',
-        key: '/cover',
+        title: '图片展览',
+        key: '/image',
         icon: 'pie-chart'
       },
       {
-        title: '科室展览',
-        key: '/room',
-        icon: 'pie-chart'
-      }
-    ]
-  },
-  {
-    title: '消息管理',
-    key: '_message',
-    icon: 'pie-chart',
-    children: [
-      {
-        title: '欢迎消息',
-        key: '/welcome',
+        title: '通知展览',
+        key: '/message',
         icon: 'pie-chart'
       },
       {
-        title: '名言消息',
+        title: '名言展览',
         key: '/saying',
         icon: 'pie-chart'
       }
     ]
   },
+  // {
+  //   title: '消息管理',
+  //   key: '_message',
+  //   icon: 'pie-chart',
+  //   children: [
+  //     {
+  //       title: '欢迎消息',
+  //       key: '/welcome',
+  //       icon: 'pie-chart'
+  //     },
+  //     {
+  //       title: '名言消息',
+  //       key: '/saying',
+  //       icon: 'pie-chart'
+  //     }
+  //   ]
+  // },
 ]
 export default menuList

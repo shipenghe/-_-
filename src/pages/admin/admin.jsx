@@ -6,9 +6,14 @@ import memory from '../../utils/memory'
 import LeftSider from '../../components/left-sider'
 import Header from '../../components/header'
 import Display from '../Display/Display'
+import Role from '../role/role'
+import User from '../user/user'
+import Message from '../message/message'
+import Saying from '../saying/saying'
 import Science from '../Science/Science'
 import Zero from '../Zero/Zero'
 import './admin.less'
+import Picture from "../picture/picture"
 
 const { Sider, Content, Footer } = Layout
 
@@ -40,6 +45,11 @@ export default class Admin extends Component {
               <Route path="/foreign" component={Zero} />
               <Route path="/social" component={Science} />
               <Route path="/info" component={Zero} />
+              <Route path="/role" component={Role} />
+              <Route path="/user" component={User} />
+              <Route path="/message" component={Message} />
+              <Route path="/saying" component={Saying} />
+              <Route path="/image" component={Picture} />
               {/* <Route path="/engineering" component={Engineering} />
             <Route path="/compre2" component={Compre2} />
             <Route path="/press" component={Press} />
