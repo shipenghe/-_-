@@ -117,6 +117,11 @@ const menuList = [
     icon: 'pie-chart'
   },
   {
+    title: '科室管理',
+    key: '/department',
+    icon: 'pie-chart'
+  },
+  {
     title: '角色管理',
     key: '/role',
     icon: 'pie-chart'

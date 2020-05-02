@@ -1,3 +1,39 @@
 @logo-color-first: #9c6114;
 @logo-color: #0168AB;
 @bg-base: #fff;
+
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+  // border-left: 1px solid rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  right: -10px;
+  width: 5px;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(146, 243, 146, 0.5);
+  background-clip: padding-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 1.9rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(146, 243, 146, 0.8);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.enable-click {
+  cursor: pointer;
+}

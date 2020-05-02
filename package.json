@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "ant-design": "D:\\Develop\\seat_reservation\\devapp>\"node\"  \"C:\\Program Files\\nodejs\\node_global\\\\node_modules\\npm\\bin\\npm-cli.js\" config get save-prefix \r\n^1.0.0",
     "antd": "^3.26.8",
     "axios": "^0.19.2",
     "babel-eslint": "10.0.3",

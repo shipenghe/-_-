@@ -6,6 +6,7 @@ import memory from '../../utils/memory'
 import LeftSider from '../../components/left-sider'
 import Header from '../../components/header'
 import Display from '../Display/Display'
+import Department from '../department/department'
 import Role from '../role/role'
 import User from '../user/user'
 import Message from '../message/message'
@@ -45,6 +46,7 @@ export default class Admin extends Component {
               <Route path="/foreign" component={Zero} />
               <Route path="/social" component={Science} />
               <Route path="/info" component={Zero} />
+              <Route path="/department" component={Department} />
               <Route path="/role" component={Role} />
               <Route path="/user" component={User} />
               <Route path="/message" component={Message} />
@@ -61,7 +63,7 @@ export default class Admin extends Component {
               <Redirect to="/display" />
             </Switch>
           </Content>
-          <Footer style={{ backgroundColor: 'rgba(200,200,200,1)' }}>
+          <Footer>
             最聪明的人是最不愿浪费时间的人。——但丁
           </Footer>
         </Layout>
